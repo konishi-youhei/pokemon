@@ -1,0 +1,136 @@
+body{
+  background: #f0f0f0;
+}
+.container{
+  width: 550px;
+  height: 550px;
+  margin: 100px auto;
+  background: #ffffff;
+}
+img{
+  width: 200px;
+  height: 200px;
+}
+.monster{
+  height: 220px;
+  overflow: hidden;
+}
+.monster-img{
+  float: right;
+  padding: 30px;
+}
+.contents-left{
+  width: 200px;
+  margin-top: 10px;
+  margin-left: 15px;
+  padding-left: 20px;
+  padding-right: 30px;
+  display: inline-block;
+  border-left: solid 1px #000000;
+  border-bottom: solid 1px #000000;
+  position: relative;
+}
+.contents-left p{
+  margin: 5px;
+}
+.contents-left::after{
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  border-bottom: 8px solid #000;
+  border-right: 16px solid transparent;
+}
+.human{
+  overflow: hidden;
+  position: relative;
+  height: 200px;
+}
+.human-img{
+  display: inline-block;
+  padding: 30px;
+}
+.contents-right{
+  width: 200px;
+  margin-right: 15px;
+  display: inline-block;
+  float: right;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  padding-left: 30px;
+  border-right: solid 1px #000000;
+  border-bottom: solid 1px #000000;
+}
+.contents-right p{
+  margin: 5px;
+}
+.contents-right::after{
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  border-bottom: 8px solid #000;
+  border-left: 16px solid transparent;
+
+
+}
+meter{
+  width: 150px;
+}
+.box{
+  border: 5px double #696969;
+  border-radius: 3px;
+  height: 100px;
+  margin: 10px;
+  position: relative;
+}
+.start{
+  text-align: center;
+  padding-top: 230px;
+}
+.gameOver{
+  text-align: center;
+  padding-top: 230px;
+  padding-bottom: 230px;
+  background: #000000;
+  color: #ffffff;
+}
+.gameOver span{
+  font-size: 22px;
+}
+.box p{
+  display: block;
+  width: 400px;
+  padding-left: 10px;
+}
+.box .clearBtn{
+  position: absolute;
+  display: inline-block;
+  text-align: right;
+  bottom: 10px;
+  right: 15px;
+}
+.box .actionBtn input{
+  border: none;
+  font-size: 16px;
+  background: none;
+  padding: 5px 10px;
+}
+input[type="submit"]:hover{
+  cursor: pointer;
+}
+.actionBtn{
+  height: 100px;
+  padding-top: 15px;
+  position: absolute;
+  right: 5px;
+  border-left: 1px solid #000000;
+  box-sizing: border-box;
+}
+#text{
+  overflow: hidden;
+  height: 50px;
+}
